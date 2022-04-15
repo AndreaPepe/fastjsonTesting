@@ -15,7 +15,7 @@ import org.junit.runners.Parameterized;
 @RunWith(Parameterized.class)
 public class JSONArrayParseTest extends TestCase {
 
-    /**
+    /*
     Old Test
 
     public void test_array() throws Exception {
