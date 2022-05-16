@@ -12,7 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.organization>andreapepe99</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/target/jacoco/report.xml</sonar.coverage.jacoco.xmlReportPaths>
+<!--        <sonar.coverage.jacoco.xmlReportPaths>target/jacoco/report.xml</sonar.coverage.jacoco.xmlReportPaths>-->
     </properties>
 
     <build>
@@ -169,7 +169,8 @@
                                     <workingDirectory>${project.basedir}</workingDirectory>
                                     <executable>mkdir</executable>
                                     <arguments>
-                                        <argument>target\jacoco</argument>
+                                        <argument>target\site</argument>
+                                        <argument>target\site\jacoco</argument>
                                     </arguments>
                                 </configuration>
                             </execution>
@@ -193,11 +194,11 @@
                                         <argument>--sourcefiles</argument>
                                         <argument>.\src\test\java</argument>
                                         <argument>--html</argument>
-                                        <argument>target\jacoco</argument>
+                                        <argument>target\site\jacoco</argument>
                                         <argument>--xml</argument>
-                                        <argument>target\jacoco\report.xml</argument>
+                                        <argument>target\site\jacoco\jacoco.xml</argument>
                                         <argument>--csv</argument>
-                                        <argument>target\jacoco\report.csv</argument>
+                                        <argument>target\site\jacoco\jacoco.csv</argument>
                                     </arguments>
                                 </configuration>
                             </execution>
@@ -230,7 +231,8 @@
                                     <workingDirectory>${project.basedir}</workingDirectory>
                                     <executable>mkdir</executable>
                                     <arguments>
-                                        <argument>target/jacoco</argument>
+                                        <argument>-p</argument>
+                                        <argument>target/site/jacoco</argument>
                                     </arguments>
                                 </configuration>
                             </execution>
@@ -254,11 +256,11 @@
                                         <argument>--sourcefiles</argument>
                                         <argument>./src/test/java</argument>
                                         <argument>--html</argument>
-                                        <argument>target/jacoco</argument>
+                                        <argument>target/site/jacoco</argument>
                                         <argument>--xml</argument>
-                                        <argument>target/jacoco/report.xml</argument>
+                                        <argument>target/site/jacoco/jacoco.xml</argument>
                                         <argument>--csv</argument>
-                                        <argument>target/jacoco/report.csv</argument>
+                                        <argument>target/site/jacoco/jacoco.csv</argument>
                                     </arguments>
                                 </configuration>
                             </execution>
