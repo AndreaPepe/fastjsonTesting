@@ -81,15 +81,11 @@
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
-
             <dependencies>
                 <dependency>
                     <groupId>com.alibaba</groupId>
                     <artifactId>fastjson</artifactId>
                     <version>1.2.79</version>
-<!--                    <scope>system</scope>-->
-                    <!-- path to the fat jar -->
-<!--                    <systemPath>${project.basedir}/lib/fastjson-1.2.79-fat.jar</systemPath>-->
                 </dependency>
                 <dependency>
                     <groupId>commons-logging</groupId>
