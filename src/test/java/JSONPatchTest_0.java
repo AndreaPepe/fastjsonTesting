@@ -2,8 +2,8 @@ import com.alibaba.fastjson.JSONPatch;
 import org.junit.Assert;
 import org.junit.Test;
 
-/*
 
+/*
 Old test class
 
 public class JSONPatchTest_0 extends TestCase {
